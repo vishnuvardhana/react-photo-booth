@@ -1,0 +1,76 @@
+.App {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+video {
+    position: absolute;
+    height: 100vh!important;
+    width: 100%!important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.info-text,
+.show-preview {
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0.5;
+    position: absolute!important;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.show-preview {
+    background: #FFF;
+    opacity: 1;
+}
+
+.show-preview img {
+    width: 100%;
+    height: 100vh;
+}
+
+.show-preview .image-preview-text {
+    color: #FFF;
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+    width: 100%;
+    top: 50px;
+}
+
+.info-text p {
+    text-align: center;
+    color: #333333;
+    margin-top: 20%!important;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.preview-thumb {
+    height: 300px;
+    width: 25%;
+    float: left;
+}
+
+.preview-thumb img {
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
