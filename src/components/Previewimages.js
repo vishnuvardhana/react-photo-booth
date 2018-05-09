@@ -9,7 +9,7 @@ class Previewimages extends Component {
 
         const PreviewThumbImages = this.props.images.map((imgUrl, index)=>{
             return (<div key={index} className='preview-thumb'> 
-                        <img src={imgUrl}/><br/> {'Image ' + (index + 1 )} 
+                        <img src={imgUrl}/><br/> {'Image '+ (index + 1 )} 
                     </div>
                     )
         });
