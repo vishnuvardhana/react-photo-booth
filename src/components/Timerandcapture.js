@@ -20,6 +20,9 @@ class Timerandcapture extends Component {
 
         this.state.timerValue = this.state.numberOfSecondsToTakeAPic;
 
+        this.beepSound =  new Audio('https://s3.us-west-2.amazonaws.com/tempsounds/countdown-timer.mp3');
+        this.shutterSound =  new Audio('https://s3.us-west-2.amazonaws.com/tempsounds/camera-shutter-click-01.mp3');
+
         this.startTimer = this.startTimer.bind(this);
         this.playShutterSound = this.playShutterSound.bind(this);
         this.playBeepSound = this.playBeepSound.bind(this);
@@ -32,13 +35,13 @@ class Timerandcapture extends Component {
     }
 
     playShutterSound() {
-        let shutter  = new Audio('./camera-shutter-click-01.mp3');
+        let shutter  = this.shutterSound;
         shutter.autoplay = false;
         shutter.play();
     }
 
     playBeepSound() {
-        let beepSound = new Audio('./countdown-timer.mp3');
+        let beepSound = this.beepSound;
         beepSound.autoplay = false;
         beepSound.play();
     }
@@ -112,7 +115,7 @@ class Timerandcapture extends Component {
             }
 
             let currentTimerValue = this.state.timerValue;
-            let totalNumberOfPicsToBeTaken = this.state.totalNumberOfPicsToBeTaken;
+            
 
              // decreasing timer value
             currentTimerValue -= 1;
